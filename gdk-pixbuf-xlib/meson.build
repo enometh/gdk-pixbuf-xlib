@@ -12,7 +12,7 @@ gdkpixbuf_xlib_headers = [
 
 gdkpixbuf_xlib_inc = include_directories('.')
 
-gdkpixbuf_xlib_api_path = join_paths('gdk-pixbuf-@0@'.format(api_version), 'gdk-pixbuf-xlib')
+gdkpixbuf_xlib_api_path = join_paths(api_name, 'gdk-pixbuf-xlib')
 
 install_headers(gdkpixbuf_xlib_headers, subdir: gdkpixbuf_xlib_api_path)
 
