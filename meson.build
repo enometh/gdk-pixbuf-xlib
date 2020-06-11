@@ -21,7 +21,7 @@ version_minor = version_arr[1].to_int()
 version_micro = version_arr[2].to_int()
 
 api_version = '@0@.0'.format(version_major)
-api_name = '@0@-@1@'.format(meson.project_name(), api_version)
+api_name = 'gdk-pixbuf-@0@'.format(api_version)
 
 if version_minor.is_odd()
   interface_age = 0
