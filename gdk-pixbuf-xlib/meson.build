@@ -44,5 +44,9 @@ pkgconfig.generate(
   name: 'GdkPixbuf Xlib',
   description: 'GdkPixbuf rendering for Xlib',
   filebase: 'gdk-pixbuf-xlib-2.0',
+  requires: [
+    gdk_pixbuf_dep,
+    x11_dep,
+  ],
   subdirs: api_name,
 )
