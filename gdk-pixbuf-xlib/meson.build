@@ -50,3 +50,26 @@ pkgconfig.generate(
   ],
   subdirs: api_name,
 )
+
+gir = find_program('g-ir-scanner', required : get_option('introspection'))
+build_gir = gir.found() and (not meson.is_cross_build() or get_option('introspection').enabled())
+
+if build_gir
+gir_args = [
+  '--warn-all',
+  '--accept-unprefixed',
+]
+
+gdkpixbuf_xlib_gir = gnome.generate_gir(
+    gdkpixbuf_xlib,
+    sources: gdkpixbuf_xlib_sources + gdkpixbuf_xlib_headers,
+    namespace: 'GdkPixbufXlib',
+    nsversion: api_version,
+    identifier_prefix: ['Gdk', 'Xlib'],
+    symbol_prefix: ['gdk_pixbuf_xlib', 'xlib'],
+    export_packages: 'gdk-pixbuf-xlib-2.0',
+    includes: [ 'GModule-2.0', 'Gio-2.0', 'GdkPixbuf-2.0', 'xlib-2.0'],
+    header: ['gdk-pixbuf/gdk-pixbuf-xlib.h', 'gdk-pixbuf/gdk-pixbuf-xlibrgb.h'],
+    install: true,
+  )
+endif

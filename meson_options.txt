@@ -2,3 +2,8 @@ option('gtk_doc',
        description: 'Whether to generate the API reference (requires GTK-Doc)',
        type: 'boolean',
        value: false)
+option('introspection',
+       description: 'Whether to generate the API introspection data (requires GObject-Introspection)',
+       type: 'feature',
+       value: 'auto',
+       yield: true)
