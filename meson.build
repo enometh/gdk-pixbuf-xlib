@@ -1,6 +1,6 @@
 project('gdk-pixbuf-xlib', 'c',
-        version: '2.40.1',
-        license: 'LGPLv2.1+',
+        version: '2.40.2',
+        license: 'LGPL-2.1-or-later',
         default_options: [
           'buildtype=debugoptimized',
           'warning_level=1',
