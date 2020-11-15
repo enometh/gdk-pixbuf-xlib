@@ -7,12 +7,20 @@
   <name xml:lang="en">gdk-pixbuf-xlib</name>
   <shortdesc xml:lang="en">Xlib integration for GdkPixbuf (DEPRECATED)</shortdesc>
   <description>The deprecated API for integrating Xlib and GdkPixbuf</description>
+  <license rdf:resource="http://usefulinc.com/doap/licenses/lgpl" />
+  <programming-language>C</programming-language>
+
+  <repository>
+    <GitRepository>
+      <browse rdf:resource="https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib/"/>
+      <location rdf:resource="https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib.git"/>
+    </GitRepository>
+  </repository>
 
   <homepage rdf:resource="http://www.gtk.org" />
   <download-page rdf:resource="https://download.gnome.org/sources/gdk-pixbuf-xlib/" />
-  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gdk-pixbuf-xlib/issues/new" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib/issues/" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#core" />
-  <programming-language>C</programming-language>
 
   <maintainer>
     <foaf:Person>
