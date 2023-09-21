@@ -3540,7 +3540,7 @@ xlib_draw_gray_image (Drawable drawable,
  * 
  * FIXME
  * 
- * Return value: FIXME
+ * Return value: (type GdkPixbufXlib.RgbCmap) (transfer none): FIXME (transfer WRONG)
  **/
 XlibRgbCmap *
 xlib_rgb_cmap_new (guint32 *colors, int n_colors)
