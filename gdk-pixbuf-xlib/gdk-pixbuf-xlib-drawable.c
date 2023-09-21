@@ -1168,7 +1168,7 @@ xlib_window_get_origin (Window w, gint *x, gint *y)
 
 /**
  * gdk_pixbuf_xlib_get_from_drawable:
- * @dest: Destination pixbuf, or NULL if a new pixbuf should be created.
+ * @dest: (nullable): Destination pixbuf, or NULL if a new pixbuf should be created.
  * @src: Source drawable.
  * @cmap: A colormap if @src is a pixmap.  If it is a window, this argument will
  * be ignored.
@@ -1208,7 +1208,7 @@ xlib_window_get_origin (Window w, gint *x, gint *y)
  * inferior windows of a different depth than that of the source window will also
  * be undefined.
  *
- * Return value: The same pixbuf as @dest if it was non-NULL, or a newly-created
+ * Return value: (transfer full): The same pixbuf as @dest if it was non-NULL, or a newly-created (transfer WRONG)
  * pixbuf with a reference count of 1 if no destination pixbuf was specified; in
  * the latter case, NULL will be returned if not enough memory could be
  * allocated for the pixbuf to be created.
