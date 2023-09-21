@@ -1032,7 +1032,7 @@ xlib_rgb_xpixel_from_rgb (guint32 rgb)
 
 /**
  * xlib_rgb_gc_set_foreground:
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @rgb: 32-bit representation of an RGB value, specified as 0x00RRGGBB.
  * 
  * This is a convenience function to set the foreground of a GC from an RGB
@@ -1050,7 +1050,7 @@ xlib_rgb_gc_set_foreground (GC gc, guint32 rgb)
 
 /**
  * xlib_rgb_gc_set_background:
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @rgb: 32-bit representation of an RGB value, specified as 0x00RRGGBB.
  * 
  * This is a convenience function to set the background of a GC from an RGB
@@ -3352,7 +3352,7 @@ xlib_draw_rgb_image_core (Drawable drawable,
 /**
  * xlib_draw_rgb_image:
  * @drawable: Destination drawable.
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @x: Leftmost coordinate of the destination rectangle.
  * @y: Upper coordinate of the destination rectangle.
  * @width: Width of the destination rectangle, in pixels.
@@ -3393,7 +3393,7 @@ xlib_draw_rgb_image (Drawable drawable,
 /**
  * xlib_draw_rgb_image_dithalign:
  * @drawable: Destination drawable.
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @x: Leftmost coordinate of the destination rectangle.
  * @y: Upper coordinate of the destination rectangle.
  * @width: Width of the destination rectangle, in pixels.
@@ -3439,7 +3439,7 @@ xlib_draw_rgb_image_dithalign (Drawable drawable,
 /**
  * xlib_draw_rgb_32_image:
  * @drawable: Destination drawable.
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @x: Leftmost coordinate of the destination rectangle.
  * @y: Upper coordinate of the destination rectangle.
  * @width: Width of the destination rectangle, in pixels.
@@ -3491,7 +3491,7 @@ xlib_rgb_make_gray_cmap (XlibRgbInfo *info)
 /**
  * xlib_draw_gray_image:
  * @drawable: Destination drawable.
- * @gc: A graphic context.
+ * @gc: (type xlib.GC): A graphic context.
  * @x: Leftmost coordinate of the destination rectangle.
  * @y: Upper coordinate of the destination rectangle.
  * @width: Width of the destination rectangle, in pixels.
@@ -3587,7 +3587,7 @@ xlib_rgb_cmap_free (XlibRgbCmap *cmap)
 /**
  * xlib_draw_indexed_image:
  * @drawable: FIXME
- * @gc: FIXME
+ * @gc:  (type xlib.GC): FIXME
  * @x: FIXME
  * @y: FIXME
  * @width: FIXME

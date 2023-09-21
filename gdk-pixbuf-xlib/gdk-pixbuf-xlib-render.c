@@ -176,7 +176,7 @@ remove_alpha (GdkPixbuf *pixbuf, int x, int y, int width, int height, int *rowst
  * gdk_pixbuf_xlib_render_to_drawable:
  * @pixbuf: A pixbuf.
  * @drawable: Destination drawable.
- * @gc: GC used for rendering.
+ * @gc: (type xlib.GC): GC used for rendering.
  * @src_x: Source X coordinate within pixbuf.
  * @src_y: Source Y coordinate within pixbuf.
  * @dest_x: Destination X coordinate within drawable.
