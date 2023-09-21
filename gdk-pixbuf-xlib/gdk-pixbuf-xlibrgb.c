@@ -3658,7 +3658,7 @@ xlib_rgb_get_cmap (void)
  * 
  * Queries the visual that XlibRGB is using.
  * 
- * Return value: An X visual.
+ * Return value: (type xlib.Visual) (transfer none): An X visual.
  **/
 Visual *
 xlib_rgb_get_visual (void)
@@ -3675,7 +3675,7 @@ xlib_rgb_get_visual (void)
  * 
  * Queries the visual info structure for the visual that XlibRGB is using.
  * 
- * Return value: An XVisualInfo structure.
+ * Return value: (type xlib.XVisualInfo) (transfer none): An XVisualInfo structure.
  **/
 XVisualInfo *
 xlib_rgb_get_visual_info (void)
@@ -3712,7 +3712,7 @@ xlib_rgb_get_depth (void)
  * 
  * Queries the X display that XlibRGB is using.
  * 
- * Return value: An X display.
+ * Return value: (type xlib.Display) (transfer none): An X display.
  **/
 Display *
 xlib_rgb_get_display (void)
@@ -3728,7 +3728,7 @@ xlib_rgb_get_display (void)
  * 
  * Queries the screen that XlibRGB is using.
  * 
- * Return value: An X screen.
+ * Return value: (type xlib.Screen) (transfer none): An X screen.
  **/
 Screen *
 xlib_rgb_get_screen (void)
