@@ -241,7 +241,7 @@ xlib_property_get (Window   window,
  *   must match the existing format or an error will occur.
  * @mode: a value describing how the new data is to be combined
  *   with the current data.
- * @data: the data (a `guchar *`
+ * @data: (array): the data (a `guchar *`
  *   `gushort *`, or `gulong *`,
  *   depending on @format), cast to a `guchar *`.
  * @nelements: the number of elements of size determined by the format,
