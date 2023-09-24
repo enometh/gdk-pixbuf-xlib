@@ -3,11 +3,13 @@ gdkpixbuf_xlib_sources = [
   'gdk-pixbuf-xlib-render.c',
   'gdk-pixbuf-xlib-drawable.c',
   'gdk-pixbuf-xlibrgb.c',
+  'gdk-pixbuf-xlib-misc.c',
 ]
 
 gdkpixbuf_xlib_headers = [
   'gdk-pixbuf-xlib.h',
   'gdk-pixbuf-xlibrgb.h',
+  'gdk-pixbuf-xlib-misc.h',
 ]
 
 gdkpixbuf_xlib_inc = include_directories('.')

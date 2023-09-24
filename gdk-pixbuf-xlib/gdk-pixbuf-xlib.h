@@ -20,6 +20,7 @@
 #define GDK_PIXBUF_XLIB_H
 
 #include <gdk-pixbuf/gdk-pixbuf.h>
+#include <gdk-pixbuf-xlib/gdk-pixbuf-xlib-misc.h>
 #include <gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.h>
 
 G_BEGIN_DECLS

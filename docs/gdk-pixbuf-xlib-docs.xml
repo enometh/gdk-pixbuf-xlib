@@ -75,6 +75,7 @@
     <chapter id="Xlib">
       <title>Xlib integration (deprecated)</title>
       <xi:include href="xml/gdk-pixbuf-xlib-init.xml" />
+      <xi:include href="xml/gdk-pixbuf-xlib-misc.xml" />
       <xi:include href="xml/gdk-pixbuf-xlib-rendering.xml" />
       <xi:include href="xml/gdk-pixbuf-xlib-from-drawables.xml" />
       <xi:include href="xml/gdk-pixbuf-xlib-rgb.xml" />
