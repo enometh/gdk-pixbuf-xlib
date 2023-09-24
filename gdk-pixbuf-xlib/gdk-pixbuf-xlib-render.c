@@ -346,8 +346,8 @@ gdk_pixbuf_xlib_render_to_drawable_alpha (GdkPixbuf *pixbuf, Drawable drawable,
 /**
  * gdk_pixbuf_xlib_render_pixmap_and_mask:
  * @pixbuf: A pixbuf.
- * @pixmap_return: Return value for the created pixmap.
- * @mask_return: Return value for the created mask.
+ * @pixmap_return: (out): Return value for the created pixmap.
+ * @mask_return: (out): Return value for the created mask.
  * @alpha_threshold: Threshold value for opacity values.
  *
  * Creates a pixmap and a mask bitmap which are returned in the @pixmap_return
